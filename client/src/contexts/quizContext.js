@@ -73,7 +73,7 @@ function QuizProvider({ children }) {
     );
 
     useEffect(function () {
-        fetch('http://localhost:5001')
+        fetch('https://react-quize-qg2o.onrender.com')
             .then((res) => res.json())
             .then((data) =>
                 dispach({ type: 'dataRecived', payload: data.questions })
